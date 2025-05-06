@@ -1,7 +1,11 @@
 # APP
 
 Esta es una aplicación web construida con Spring Boot que permite gestionar libros mediante una API REST. Se pueden agregar, obtener y eliminar libros. A continuación, se describen las pruebas realizadas.
+## Descripción del proyecto:
+Aplicación web desarrollada en Java con Spring Boot que implementa un sistema básico de gestión de libros. Permite listar, agregar, buscar y eliminar libros mediante endpoints REST. Los datos se almacenan temporalmente en memoria. Incluye pruebas de caja negra y caja blanca documentadas en el README.md.
 
+Repositorio en GitHub:
+https://github.com/Laboratorio104/APP
 
 ## Pruebas de Caja Negra
 ### Definición:
