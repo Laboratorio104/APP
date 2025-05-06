@@ -1,6 +1,10 @@
 # APP
-Pruebas de Caja Negra
-Definicion:
+
+Esta es una aplicación web construida con Spring Boot que permite gestionar libros mediante una API REST. Se pueden agregar, obtener y eliminar libros. A continuación, se describen las pruebas realizadas.
+
+
+## Pruebas de Caja Negra
+### Definición:
 Este tipo de pruebas se enfoca en probar la funcionalidad sin conocer el código interno. Solo se interactúa con la app como lo haría un usuario o cliente.
 
 Prueba 1: Obtener lista de libros
@@ -34,8 +38,8 @@ Esperado: Respuesta con estado 204 (No Content)
 
 Resultado: Correcto
 
-Pruebas de Caja Blanca
-Definición:
+## Pruebas de Caja Blanca
+## Definición:
 Se revisa el código interno, la lógica y los flujos de control. Se aplican pruebas a métodos específicos.
 
 Prueba 1: Método guardarLibro()
@@ -58,6 +62,9 @@ Objetivo: Verifica que elimine el libro correcto.
 Escenario: El libro existe.
 
 Resultado Esperado: La lista ya no contiene ese libro.
+
+## Conclusión:
+Todas las pruebas fueron exitosas, lo cual indica que las funcionalidades básicas de la API REST funcionan correctamente.
 
 
 
