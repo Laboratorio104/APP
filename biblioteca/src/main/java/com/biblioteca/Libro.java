@@ -2,7 +2,9 @@ package com.biblioteca;
 
 public class Libro {
     private int id;
+    @notBlank(message = "El titulo no puede estar vacio")
     private String titulo;
+    @notBlank(message = "El Autor no puede estar vacio")
     private String autor;
     private boolean prestado;
 
