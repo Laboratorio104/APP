@@ -1,3 +1,4 @@
+package com.biblioteca;
 
 public class Prestamo {
     private Long id;
