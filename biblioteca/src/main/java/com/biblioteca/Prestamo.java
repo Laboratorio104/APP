@@ -1,5 +1,5 @@
-package com.biblioteca.modelo;
 
+package com.biblioteca.modelo;
 import java.time.LocalDate;
 
 public class Prestamo {
@@ -9,7 +9,7 @@ public class Prestamo {
     private LocalDate fechaPrestamo;
     private LocalDate fechaDevolucion;
 
-    // Getters y Setters
+    
     public Long getId() {
         return id;
     }
