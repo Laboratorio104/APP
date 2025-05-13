@@ -1,21 +1,17 @@
 package com.biblioteca;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class SistemaPuntos {
-    private Usuario usuario;
-    private int puntosAcumulados;
+    private Map<Integer, Integer> puntosUsuarios = new HashMap<>();
 
-    public SistemaPuntos(Usuario usuario) {
-        this.usuario = usuario;
-        this.puntosAcumulados = 0;
+    public void asignarPuntos(int usuarioId, int puntos) {
+        int total = puntosUsuarios.getOrDefault(usuarioId, 0) + puntos;
+        puntosUsuarios.put(usuarioId, total);
     }
 
-    public void asignarPuntosPorPrestamo() {
-        puntosAcumulados += 10; // ejemplo
+    public int consultarPuntos(int usuarioId) {
+        return puntosUsuarios.getOrDefault(usuarioId, 0);
     }
-
-    public void descontarPuntosPorMulta() {
-        puntosAcumulados -= 5;
-    }
-
-    // Getters y Setters
 }
